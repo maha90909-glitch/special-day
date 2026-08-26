@@ -443,6 +443,9 @@ function loop(){
 }
 
 /* boot */
+if((location.hash+location.search).toLowerCase().includes("reset")){
+  try{ localStorage.removeItem("bd_step"); localStorage.removeItem("bd_todo"); }catch(e){}
+}
 if(tick()){
   setInterval(tick,1000);
   const s = Math.min(Math.max(store.get(),1),5);
