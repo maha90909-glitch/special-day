@@ -314,8 +314,7 @@ input[type=text]:focus{border-color:var(--sage);background:rgba(12,17,14,.85);bo
 /* ============ SETTINGS ============ */
 const WHATSAPP_NUMBER = "966500077238";                 // your number, international format, no +
 const WHATSAPP_TEXT   = "أنا جاهز، عطني كلمة السر!";
-const PUBLISHED_AT    = new Date("2026-08-26T17:55:00+03:00"); // publish moment
-const VALID_HOURS     = 72;
+const EXPIRES_ON     = new Date("2026-08-29T23:59:00+03:00"); // ينتهي ليلة السبت
 const SHOW_COUNTDOWN  = true;
 const PASSWORDS       = ["اكثر", "هشت", "شخبارو؟", "نوافي"];
 const TODO = [
@@ -328,7 +327,7 @@ const TODO = [
 ];
 /* ================================== */
 
-const EXPIRES_AT = new Date(PUBLISHED_AT.getTime() + VALID_HOURS*36e5);
+const EXPIRES_AT = EXPIRES_ON;
 const $  = (s,r=document)=>r.querySelector(s);
 const $$ = (s,r=document)=>[...r.querySelectorAll(s)];
 
