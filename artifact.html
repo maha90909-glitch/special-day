@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#141a16">
 <title>Happy Birthday</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
+html{direction:rtl}
+
 :root{
   --bg:#101512;
   --bg-2:#161d19;
@@ -158,10 +152,6 @@ input[type=text]:focus{border-color:var(--sage);background:rgba(12,17,14,.85);bo
 .finale b{color:var(--sage)}
 .sig{font-family:'Cormorant Garamond',serif;font-style:italic;direction:ltr;font-size:19px;color:var(--blue);margin-top:8px;display:block}
 
-.letter{margin:4px 0 0;text-align:center}
-.letter p{margin:0 0 13px;font-size:16.5px;line-height:2;color:#dbe5dd}
-.letter p:last-child{margin-bottom:0}
-.letter .last{font-size:20px;font-weight:700;color:var(--sage);letter-spacing:.02em;margin-top:18px}
 .timer{
   position:fixed;left:50%;transform:translateX(-50%);
   bottom:calc(16px + env(safe-area-inset-bottom));z-index:5;
@@ -178,8 +168,8 @@ input[type=text]:focus{border-color:var(--sage);background:rgba(12,17,14,.85);bo
 @media (max-width:360px){.card{padding:26px 18px 22px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
-</head>
-<body>
+<script>document.documentElement.setAttribute("dir","rtl");document.documentElement.setAttribute("lang","ar");</script>
+
 <canvas id="fx"></canvas>
 
 <div class="wrap">
@@ -192,13 +182,12 @@ input[type=text]:focus{border-color:var(--sage);background:rgba(12,17,14,.85);bo
       <h1>Happy Birthday<br><em>My Hero, My Googli</em><br>&amp; My Everything</h1>
       <div class="rule"></div>
       <p class="lead big">استناك يوم الجمعة.. محجووووز بالكامل!</p>
-      <p class="lead" style="margin-top:12px">أول شي: روح شوف هديتك.. تستنااااك 🎁</p>
       <form data-step="1">
         <div class="field"><input type="text" placeholder="اكتب كلمة السر" autocomplete="off" autocapitalize="off" spellcheck="false"></div>
         <button class="btn" type="submit">يالله نبدأ ✨</button>
         <p class="hint"></p>
       </form>
-      <a class="btn ghost wa" href="#" target="_blank" rel="noopener" style="margin-top:16px">
+      <a class="btn ghost wa" href="#" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20"/></svg>
         أبي كلمة السر
       </a>
@@ -210,15 +199,15 @@ input[type=text]:focus{border-color:var(--sage);background:rgba(12,17,14,.85);bo
     <div class="card">
       <div class="steps"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
       <p class="eyebrow">Stop One</p>
-      <p class="emoji">🛋️</p>
-      <h2>روح الصالة</h2>
-      <p class="lead">اجلس في الصالة ولا تتحرك.. غمّض عيونك بيدك لين ما أجي!</p>
+      <p class="emoji">🎁</p>
+      <h2>هدية الدولاب</h2>
+      <p class="lead">ابيك تروح للدولاب وتشيك على هديتك لأنها تستنااااااك!</p>
       <form data-step="2">
         <div class="field"><input type="text" placeholder="اكتب كلمة السر" autocomplete="off" autocapitalize="off" spellcheck="false"></div>
-        <button class="btn" type="submit">وصلت الصالة 🛋️</button>
+        <button class="btn" type="submit">فتحتها؟ كمّل 🎁</button>
         <p class="hint"></p>
       </form>
-      <a class="btn ghost wa" href="#" target="_blank" rel="noopener" style="margin-top:16px">
+      <a class="btn ghost wa" href="#" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20"/></svg>
         أبي كلمة السر
       </a>
@@ -233,13 +222,12 @@ input[type=text]:focus{border-color:var(--sage);background:rgba(12,17,14,.85);bo
       <p class="emoji">🍽️</p>
       <h2>مفاجأة المطعم</h2>
       <p class="lead">يالله نروح مطعم فاخر، زبطلي نفسك والمطعم سبراااايز!</p>
-      <p class="lead" style="margin-top:12px">وعشاني أحبك.. العشا على حسابك 😄</p>
       <form data-step="3">
         <div class="field"><input type="text" placeholder="اكتب كلمة السر" autocomplete="off" autocapitalize="off" spellcheck="false"></div>
         <button class="btn" type="submit">جاهز 🍽️</button>
         <p class="hint"></p>
       </form>
-      <a class="btn ghost wa" href="#" target="_blank" rel="noopener" style="margin-top:16px">
+      <a class="btn ghost wa" href="#" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20"/></svg>
         أبي كلمة السر
       </a>
@@ -251,15 +239,15 @@ input[type=text]:focus{border-color:var(--sage);background:rgba(12,17,14,.85);bo
     <div class="card">
       <div class="steps"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
       <p class="eyebrow">Stop Three</p>
-      <p class="emoji">🎉</p>
-      <h2>الفعالية</h2>
-      <p class="lead">شبعت الحمدلله؟ باقي وحدة.. عندنا فعالية تستناك، حزر فزر وش هي؟</p>
+      <p class="emoji">☕</p>
+      <h2>استراحة وقهوة</h2>
+      <p class="lead">شبعت الحمدلله؟ الحين بنروح مكان نسترخي شوي ونتقهوى.. حزر فزر وش هو؟</p>
       <form data-step="4">
         <div class="field"><input type="text" placeholder="اكتب كلمة السر" autocomplete="off" autocapitalize="off" spellcheck="false"></div>
-        <button class="btn" type="submit">خمّنت! 🎉</button>
+        <button class="btn" type="submit">خمّنت! ☕</button>
         <p class="hint"></p>
       </form>
-      <a class="btn ghost wa" href="#" target="_blank" rel="noopener" style="margin-top:16px">
+      <a class="btn ghost wa" href="#" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20"/></svg>
         أبي كلمة السر
       </a>
@@ -270,16 +258,10 @@ input[type=text]:focus{border-color:var(--sage);background:rgba(12,17,14,.85);bo
   <section class="page" id="p5">
     <div class="card">
       <div class="steps"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
-      <p class="eyebrow">One Last Thing</p>
-      <h1 style="font-size:clamp(25px,7.2vw,34px)">Happy Birthday<br><em>Nawaf</em></h1>
-      <div class="rule"></div>
-      <div class="letter">
-        <p>أحبك.</p>
-        <p>وأحب وجودك في حياتي.</p>
-        <p>هذي السنة كانت من أجمل سنواتي، وكل شي فيها كان حلو —<br>ضحكنا، وقلنا كلام، وتخاصمنا، وتعلّمنا.</p>
-        <p>وكل سنة عن سنة.. ننضج أكثر، ونعرف بعض أكثر.</p>
-        <p class="last">أحبك 🤍</p>
-      </div>
+      <p class="eyebrow">The Grand Finale</p>
+      <p class="emoji">🎬</p>
+      <h2>الختام والمفاجأة</h2>
+      <p class="lead">الحمدلله الفلم خيال! يالله نرجع البيت، في شي أخير يضحك بيستناك!</p>
       <div class="rule"></div>
       <p class="eyebrow" style="margin-bottom:4px">Birthday To-Do List</p>
       <ul class="todo" id="todo"></ul>
@@ -288,9 +270,9 @@ input[type=text]:focus{border-color:var(--sage);background:rgba(12,17,14,.85);bo
         اليوم كله لك.. وباقي أيامي كمان.
         <span class="sig">— with all my heart</span>
       </div>
-      <a class="btn ghost wa" data-msg="قريتها كلها.. أحبك 🤍" href="#" target="_blank" rel="noopener" style="margin-top:16px">
+      <a class="btn ghost wa" href="#" target="_blank" rel="noopener" style="margin-top:16px">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20"/></svg>
-        ردّ عليها 🤍
+        كلمني 💬
       </a>
     </div>
   </section>
@@ -312,19 +294,19 @@ input[type=text]:focus{border-color:var(--sage);background:rgba(12,17,14,.85);bo
 
 <script>
 /* ============ SETTINGS ============ */
-const WHATSAPP_NUMBER = "966500077238";                 // your number, international format, no +
+const WHATSAPP_NUMBER = "966500000000";                 // your number, international format, no +
 const WHATSAPP_TEXT   = "أنا جاهز، عطني كلمة السر!";
-const PUBLISHED_AT    = new Date("2026-08-26T17:55:00+03:00"); // publish moment
+const PUBLISHED_AT    = new Date("2026-08-25T17:05:00+03:00"); // publish moment
 const VALID_HOURS     = 72;
 const SHOW_COUNTDOWN  = true;
 const PASSWORDS       = ["اكثر", "هشت", "شخبارو؟", "نوافي"];
 const TODO = [
-  "فتحنا الهدية 🎁",
-  "مفاجأة الصالة 🛋️",
+  "فتحنا هدية الدولاب 🎁",
   "عشاء في المطعم الفاخر 🍽️",
-  "الفعالية 🎉",
-  "ضحكنا لين تعبنا 😄",
-  "قريت الرسالة 🤍"
+  "قهوة واسترخاء ☕",
+  "الفلم الخيالي 🎬",
+  "المفاجأة الأخيرة 😄",
+  "ضحكنا لين تعبنا 💚"
 ];
 /* ================================== */
 
@@ -348,7 +330,7 @@ const store = {
 
 /* whatsapp links */
 $$(".wa").forEach(a=>{
-  a.href = "https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(a.dataset.msg || WHATSAPP_TEXT);
+  a.href = "https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(WHATSAPP_TEXT);
 });
 
 /* to-do list */
@@ -367,14 +349,6 @@ TODO.forEach((t,i)=>{
 });
 
 /* pages */
-function fadeOut(el, then){
-  let called = false;
-  const run = ()=>{ if(called) return; called = true; el.style.opacity=""; el.style.transform=""; then(); };
-  el.style.transition = "opacity .3s cubic-bezier(.4,0,1,1), transform .3s cubic-bezier(.4,0,1,1)";
-  requestAnimationFrame(()=>{ el.style.opacity = "0"; el.style.transform = "translateY(-14px) scale(.98)"; });
-  el.addEventListener("transitionend", run, {once:true});
-  setTimeout(run, 340);
-}
 function show(id){
   $$(".page").forEach(p=>p.classList.remove("active"));
   const el = $("#"+id); el.classList.add("active");
@@ -383,7 +357,7 @@ function show(id){
 function goStep(n){
   store.set(n); show("p"+n);
   if(n===1) setTimeout(()=>burst(70),400);
-  if(n===5) setTimeout(()=>burst(160),300);
+  if(n===5) setTimeout(()=>burst(150),300);
   const inp = $("#p"+n+" input[type=text]"); if(inp) setTimeout(()=>inp.focus({preventScroll:true}),650);
 }
 
@@ -393,7 +367,10 @@ $$("form").forEach(f=>{
     const step = +f.dataset.step, inp = f.querySelector("input"), hint = f.querySelector(".hint");
     if(norm(inp.value) === KEYS[step-1]){
       hint.classList.remove("show");
-      fadeOut(f.closest(".card"), ()=>{ inp.value=""; goStep(step+1); });
+      f.closest(".card").animate(
+        [{opacity:1,transform:"none"},{opacity:0,transform:"translateY(-14px) scale(.98)"}],
+        {duration:340,easing:"cubic-bezier(.4,0,1,1)"}
+      ).onfinish = ()=>{ inp.value=""; goStep(step+1); };
     }else{
       inp.classList.remove("shake"); void inp.offsetWidth; inp.classList.add("shake");
       hint.textContent = "مو صحيحة.. جرب مرة ثانية 🌿";
@@ -453,5 +430,3 @@ if(tick()){
   goStep(s);
 }
 </script>
-</body>
-</html>
